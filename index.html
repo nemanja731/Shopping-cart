@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping cart</title>
+</head>
+<body>
+  <h1>
+    Market
+  </h1>
+  <div class="container">
+    <div class="shopping">
+      <h2>Shopping</h2>
+      <div class="item">
+        <img src="img/potato.png">
+        <div class="content">
+          <h3 class="name">Potato</h3>
+          <p class="price">$10</p>
+        </div>
+        <div class="action">
+          <div class="action-inside-div1">
+            <input type="number" min="0" value="0" name="quantity" class="input-quantity">
+          </div>
+          <div class="action-inside-div2">
+            <button onclick="add(this)" class="addButton">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/tomato.png">
+        <div class="content">
+          <h3 class="name">Tomato</h3>
+          <p class="price">$20</p>
+        </div>
+        <div class="action">
+          <div class="action-inside-div1">
+            <input type="number" min="0" value="0" name="quantity" class="input-quantity">
+          </div>
+          <div class="action-inside-div2">
+            <button onclick="add(this)" class="addButton">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/carrot.png">
+        <div class="content">
+          <h3 class="name">Carrot</h3>
+          <p class="price">$30</p>
+        </div>
+        <div class="action">
+          <div class="action-inside-div1">
+            <input type="number" min="0" value="0" name="quantity" class="input-quantity">
+          </div>
+          <div class="action-inside-div2">
+            <button onclick="add(this)" class="addButton">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Cart</h2>
+      <div class="cart-items"></div>
+			<div class="total"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
