@@ -8,7 +8,6 @@ function add(button) {
   price = parseInt(price);
   let quantity = itemDiv.querySelector('input').value;
   quantity = parseInt(quantity);
-
   if(quantity < 1) {
     alert('Quantity must be greater than 0!');
     return;
